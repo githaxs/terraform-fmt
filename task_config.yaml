@@ -11,3 +11,4 @@ task:
     - pull_request.reopened
     - pull_request.synchronize
     - check_run.rerequested
+    - check_run.requested_action

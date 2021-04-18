@@ -5,7 +5,6 @@ COPY --from=terraform /bin/terraform /bin/terraform
 
 RUN yum install -y git
 
-RUN echo 1
 COPY requirements.txt .
 RUN python3.8 -m pip install -r requirements.txt
 
