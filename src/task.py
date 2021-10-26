@@ -9,7 +9,7 @@ class Task(TaskInterface):
     """
 
     name = "Terraform Format"
-    slug = "terraform-fmt "
+    slug = "terraform-format"
     pass_summary = ""
     pass_text = ""
     fail_summary = "Files not formatted correctly."
@@ -17,9 +17,11 @@ class Task(TaskInterface):
     subscription_level = SubscriptionLevels.FREE
 
     actions = None
+    can_fix = True
+
     type = TaskTypes.CODE_FORMAT
-    command = "terraform fmt -no-color -list=false"
-    file_filters = ".*.(tf|tfvars)$"
+    source_script_path = "%s/task.sh" % os.path.dirname(__file__)
+    handler = "task"
 
     def execute(self, github_body, settings) -> bool:
         pass

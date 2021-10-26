@@ -1,6 +1,13 @@
+version: v2
 name: Terraform Format
-slug: terraform-fmt
+slug: terraform-format
 type: content
+summary: Ensure Terraform files are formatted.
+description: Ensure Terraform files are formatted.
+default_configuration:
+  installation:
+    repo_languages:
+      - HCL
 subscribed_events:
   - pull_request.opened
   - pull_request.reopened
