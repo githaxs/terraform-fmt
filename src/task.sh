@@ -10,5 +10,5 @@ run() {
 task() {
     echo "Running Terraform Format"
 
-    foreach_changed_file_loop run
+    foreach_changed_file run
 }

@@ -4,6 +4,7 @@ slug: terraform-format
 type: content
 summary: Ensure Terraform files are formatted.
 description: Ensure Terraform files are formatted.
+subscription_level: 1
 default_configuration:
   installation:
     repo_languages:

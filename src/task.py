@@ -14,7 +14,7 @@ class Task(TaskInterface):
     pass_text = ""
     fail_summary = "Files not formatted correctly."
     fail_text = ""
-    subscription_level = SubscriptionLevels.FREE
+    subscription_level = SubscriptionLevels.STARTUP
 
     actions = None
     can_fix = True
