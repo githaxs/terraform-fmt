@@ -9,6 +9,7 @@ default_configuration:
   installation:
     repo_languages:
       - HCL
+memory: 512
 subscribed_events:
   - pull_request.opened
   - pull_request.reopened
