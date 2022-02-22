@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:0.14.10 as terraform
+FROM hashicorp/terraform:1.1.6 as terraform
 
 FROM public.ecr.aws/lambda/python:3.8 as deps
 COPY --from=terraform /bin/terraform /bin/terraform
