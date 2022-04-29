@@ -3,7 +3,7 @@ import os
 from task_interfaces import FormatTask, SubscriptionLevels
 
 
-class Task(TaskInterface):
+class Task(FormatTask):
     """
     Ensure all Terraform files are formatted correctly
     """
